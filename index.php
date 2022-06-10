@@ -20,21 +20,21 @@
       <div class="card card-body">
         <form action="save_Jugadoresdefutbol.php" method="POST">
           <div class="form-group">
-            <input type="text" name="Equipo" class="form-control" placeholder="Jugadoresdefutbol Equipo" autofocus>
+            <input type="text" name="Equipo" class="form-control" placeholder="Equipo" autofocus>
           </div>
           <div class="form-group">
-            <textarea name="Pais" rows="2" class="form-control" placeholder="Jugadoresdefutbol Pais"></textarea>
+            <textarea name="Pais" rows="2" class="form-control" placeholder="Pais"></textarea>
           </div>
           <div class="form-group">
-            <textarea name="Nombre" rows="2" class="form-control" placeholder="Jugadoresdefutbol Nombre"></textarea>
+            <textarea name="Nombre" rows="2" class="form-control" placeholder="Nombre"></textarea>
           </div>
           <div class="form-group">
-            <textarea name="Numerodeplayera" rows="2" class="form-control" placeholder="Jugadoresdefutbol Numerodeplayera"></textarea>
+            <textarea name="Numerodeplayera" rows="2" class="form-control" placeholder="Numero de playera"></textarea>
           </div>
           <div class="form-group">
-            <textarea name="Valoracion" rows="2" class="form-control" placeholder="Jugadoresdefutbol Valoracion"></textarea>
+            <textarea name="Valoracion" rows="2" class="form-control" placeholder="Valoracion"></textarea>
           </div>
-          <input type="submit" name="save_Jugadoresdefutbol" class="btn btn-success btn-block" value="Save Jugadoresdefutbol">
+          <input type="submit" name="save_Jugadoresdefutbol" class="btn btn-success btn-block" value="Save Jugadores de futbol">
         </form>
       </div>
     </div>
@@ -54,9 +54,9 @@
 
           <?php
           $query = "SELECT * FROM Jugadoresdefutbol";
-          $result_tasks = mysqli_query($conn, $query);    
+          $result_Jugadoresdefutbol = mysqli_query($conn, $query);    
 
-          while($row = mysqli_fetch_assoc($result_tasks)) { ?>
+          while($row = mysqli_fetch_assoc($result_Jugadoresdefutbol)) { ?>
           <tr>
             <td><?php echo $row['Equipo']; ?></td>
             <td><?php echo $row['Pais']; ?></td>
