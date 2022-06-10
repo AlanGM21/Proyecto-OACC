@@ -25,6 +25,15 @@
           <div class="form-group">
             <textarea name="Pais" rows="2" class="form-control" placeholder="Jugadoresdefutbol Pais"></textarea>
           </div>
+          <div class="form-group">
+            <textarea name="Nombre" rows="2" class="form-control" placeholder="Jugadoresdefutbol Nombre"></textarea>
+          </div>
+          <div class="form-group">
+            <textarea name="Numerodeplayera" rows="2" class="form-control" placeholder="Jugadoresdefutbol Numerodeplayera"></textarea>
+          </div>
+          <div class="form-group">
+            <textarea name="Valoracion" rows="2" class="form-control" placeholder="Jugadoresdefutbol Valoracion"></textarea>
+          </div>
           <input type="submit" name="save_Jugadoresdefutbol" class="btn btn-success btn-block" value="Save Jugadoresdefutbol">
         </form>
       </div>
